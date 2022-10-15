@@ -135,14 +135,14 @@ async def next_page(bot, query):
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer("𝖲𝗐𝖺𝗇𝗍𝗁𝖺𝗆𝖺𝗒𝗂 𝖲𝖾𝖺𝗋𝖼𝗁 𝖢𝗁𝖾𝗒𝖺𝖽𝖺 𝖬𝗈𝗐𝗇𝖾", show_alert=True)
+        return await query.answer("Dᴏ ʏᴏᴜ'ʀᴇ ᴏᴡɴ ʀᴇᴏ̨ᴜᴇsᴛ, Tʜɪs ɪs ɴᴏᴛ ʏᴏᴜʀs!", show_alert=True)
     if movie_ == "close_spellcheck":
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.message_id)
     if not movies:
-        return await query.answer("𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖠𝗀𝖺𝗂𝗇 𝖣𝗎𝖽𝖾, 𝖥𝗂𝗅𝖾 𝖫𝗂𝗇𝗄 𝖾𝗑𝗉𝗂𝗋𝖾𝖽.", show_alert=True)
+        return await query.answer("Pʟᴇᴀsᴇ ʀᴇᴏ̨ᴜᴇsᴛ Aɢᴀɪɴ, Fɪʟᴇ Lɪɴᴋ ᴇxᴘɪʀᴇᴅ.", show_alert=True)
     movie = movies[(int(movie_))]
-    await query.answer('𝖭𝗃𝖺𝗇 𝖬𝗈𝗏𝗂𝖾 𝗈𝗇𝗇 𝖳𝗁𝖺𝗉𝗉𝖺𝗍𝖾 𝖻𝗋𝗈...')
+    await query.answer('I ᴀᴍ sᴇᴀʀᴄʜɪɴɢ ᴍᴏᴠɪᴇ👀')
     k = await manual_filters(bot, query.message, text=movie)
     if k == False:
         files, offset, total_results = await get_search_results(movie, offset=0, filter=True)
