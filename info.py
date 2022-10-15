@@ -1,3 +1,6 @@
+from telegram import *
+from telegram.ext import *
+from requests import *
 from asyncio.log import logger
 import re
 from os import environ
