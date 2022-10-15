@@ -223,7 +223,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         if act == "":
             stat = "CONNECT"
-            cb = "connect"
+            cb = "connectcb"
         else:
             stat = "DISCONNECT"
             cb = "disconnect"
