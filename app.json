@@ -33,7 +33,7 @@
             "required": true
         },
         "CHANNELS": {
-            "description": "Username or ID of channel or group. Separate multiple IDs by space.",
+            "description": "File Store Channel or Index Channel Username or ID of channel or group. Separate multiple IDs by space.",
             "required": false
         },
         "ADMINS": {
