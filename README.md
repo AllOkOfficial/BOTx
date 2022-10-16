@@ -1,4 +1,4 @@
-<h1>𝙏𝙊𝙑𝙄𝙉𝙊 𝘽𝙊𝙏
+<h1><b>TᴇʟᴇMᴏᴠɪᴇsRᴏʙᴏᴛ</b>
 
 
 ## Features
@@ -130,5 +130,5 @@ Selling The Codes To Other People For Money Is *Strictly Prohibited*.
 
 ## 𝙏𝙍𝙄𝘽𝙐𝙏𝙀 𝙏𝙊
 
-𝘍𝘰𝘳 𝘛𝘩𝘰𝘴𝘦 𝘨𝘶𝘺𝘴 𝘴𝘵𝘰𝘭𝘦 𝘤𝘰𝘥𝘦𝘴 🥲🤧
+Just for reference!
 
