@@ -57,7 +57,7 @@ You can deploy this bot anywhere.
 <details><summary>Deploy To VPS</summary>
 <p>
 <pre>
-git clone https://github.com/DKBOTx/TovinoBotV3
+git clone https://github.com/AllOkOfficial/BOTx
 # Install Packages
 pip3 install -U -r requirements.txt
 Edit info.py with variables as given below then run bot
@@ -101,11 +101,11 @@ python3 bot.py
 • /link - to create link for one post
 ```
 ## Support
-[𝘿𝙆_𝘽𝙊𝙏𝙭](https://telegram.dog/dk_botx)
+[Hᴏᴍʙᴀʟᴇ Cɪɴᴇᴍᴀs](https://telegram.dog/HombaleCinemasChat)
 
 ## Bot
 
-[𝙏𝙤𝙫𝙞𝙣𝙤 𝘽𝙤𝙩](https://telegram.dog/filesearchxbot)
+[TᴇʟᴇMᴏᴠɪᴇsRᴏʙᴏᴛ](https://telegram.dog/TeleMoviesRobot)
 
 ## Credits 
 * [𝘉𝘈𝘚𝘌 𝘙𝘌𝘗𝘖 𝘜𝘚𝘌𝘋](https://github.com/EvamariaTG/EvaMaria)
@@ -118,7 +118,7 @@ python3 bot.py
 
 ### Note
 
-[𝘊𝘳𝘦𝘢𝘵𝘰𝘳](https://telegram.dog/aboutme_dk)
+[𝘊𝘳𝘦𝘢𝘵𝘰𝘳](https://telegram.dog/r2spr)
 
 Kanging this codes and and editing a few lines and releasing a V.x  or an [alpha](https://telegram.dog/subin_works/204), beta , gama branches of your repo won't make you a Developer.
 Fork the repo and edit as per your needs. 𝘛𝘩𝘦𝘴𝘦 𝘢𝘳𝘦 𝘭𝘪𝘯𝘦𝘴 𝘧𝘳𝘰𝘮 𝘦𝘷𝘢 𝘥𝘦𝘷𝘴 , 𝘪𝘵𝘴 𝘳𝘪𝘨𝘩𝘵 𝘢𝘣𝘰𝘶𝘵 𝘮𝘦 . 
@@ -128,7 +128,7 @@ Fork the repo and edit as per your needs. 𝘛𝘩𝘦𝘴𝘦 𝘢𝘳𝘦 𝘭
 Licensed under [GNU AGPL 2.0.](https://github.com/DKBOTx/TovinoBotV3/blob/main/LICENSE)
 Selling The Codes To Other People For Money Is *Strictly Prohibited*.
 
-## 𝙏𝙍𝙄𝘽𝙐𝙏𝙀 𝙏𝙊
+## 𝙃𝙊𝙈𝘽𝘼𝙇𝙀 𝘾𝙄𝙉𝙀𝙈𝘼𝙎
 
 Just for reference!
 
