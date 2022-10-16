@@ -1,12 +1,12 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/DKBOTx/TovinoBotV3.git /TovinoBotV3
+  git clone https://github.com/AllOkOfficial/BOTx.git /BOTx
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /TovinoBotV3
+  git clone $UPSTREAM_REPO /BOTx
 fi
-cd /TovinoBotV3
+cd /BOTx
 pip3 install -U -r requirements.txt
-echo "Starting 𝘋𝘒_𝘉𝘖𝘛𝘹...."
+echo "Starting TeleMoviesRobot...."
 python3 bot.py
