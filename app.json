@@ -1,5 +1,5 @@
 {
-    "name": "Tovino Bot V3",
+    "name": "TeleMoviesRobot",
     "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
     "stack": "container",
     "keywords": [
@@ -17,8 +17,8 @@
       "Redirect Bot",
       "Tovino Bot"
     ],
-    "website": "https://github.com/DKBOTx/TovinoBotV3",
-    "repository": "https://github.com/DKBOTx/TovinoBotV3",
+    "website": "https://github.com/AllOkOfficial/BOTx",
+    "repository": "https://github.com/AllOkOfficial/BOTx",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
@@ -76,17 +76,17 @@
         },
         "START_IMAGE_URL":{
             "description": "Start image URL. Defaults to https://telegra.ph/TovinoBotV3-05-23",
-            "value": "https://telegra.ph/TovinoBotV3-05-23",
+            "value": "https://telegra.ph/file/918ab60116c57c11ffec8.jpg",
             "required": false
         },
         "UNAUTHORIZED_CALLBACK_TEXT":{
             "description": "Text to show when unauthorized user tries to use bot. Defaults to 'oKda' (200 Char Limit).",
-            "value": "𝙏𝙃𝙄𝙎 𝙄𝙎 𝙉𝙊𝙏 𝙂𝙐𝘿 𝘿𝙐𝘿𝙀",
+            "value": "Dᴏ ʏᴏᴜ'ʀᴇ ᴏᴡɴ ʀᴇᴏ̨ᴜᴇsᴛ, Tʜɪs ɪs ɴᴏᴛ ʏᴏᴜʀs!",
             "required": false
         },
         "REDIRECT_TO":{
             "description": "Username of the channel without '@' to send files and redirect users to. Deafults to 0 (no redirect). AUTH CHANNEL and REDIRECT Channel must be same",
-            "value": "oKda",
+            "value": "HombaleFileStore",
             "required": false
         }
     },
