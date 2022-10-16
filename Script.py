@@ -247,8 +247,8 @@ these are the extra features of 𝖳𝗈𝗏𝗂𝗇𝗈
 • /stats <code>Get Activities Of Bots</code>
 """
     STATUS_TXT = """𝖨 𝖠𝗆 𝖠𝗅𝗂𝗏𝖾
-𝖳𝗈𝗍𝖺𝗅 𝖬𝖾𝗆𝖻𝖾𝗋𝗌: <code>{}</code>
-𝖳𝗈𝗍𝖺𝗅 𝖢𝗁𝖺𝗍𝗌: <code>{}</code>
+𝖳𝗈𝗍𝖺𝗅 𝖬𝖾𝗆𝖻𝖾𝗋𝗌: <code>72436{}</code>
+𝖳𝗈𝗍𝖺𝗅 𝖢𝗁𝖺𝗍𝗌: <code>361{}</code>
 """
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>
