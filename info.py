@@ -5,7 +5,6 @@ import re
 from os import environ
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters
-from info import DELETE_TIME
 from pyrogram.errors import FloodWait, UserIsBlocked, MessageNotModified, PeerIdInvalid
 id_pattern = re.compile(r'^.\d+$')
 def is_enabled(value, default):
