@@ -15,7 +15,7 @@
       "index",
       "inline",
       "Redirect Bot",
-      "Tovino Bot"
+      "TeleMoviesRobot Bot"
     ],
     "website": "https://github.com/AllOkOfficial/BOTx",
     "repository": "https://github.com/AllOkOfficial/BOTx",
@@ -34,18 +34,22 @@
         },
         "CHANNELS": {
             "description": "File Store Channel or Index Channel Username or ID of channel or group. Separate multiple IDs by space.",
+            "value": "-1001531416949",
             "required": false
         },
         "ADMINS": {
             "description": "Username or ID of Admin. Separate multiple Admins by space.",
+            "value": "1906155412",
             "required": true
         },
         "PICS": {
             "description": "Add some telegraph link of pictures .",
+            "value": "https://telegra.ph/file/918ab60116c57c11ffec8.jpg",
             "required": false
         },
         "LOG_CHANNEL": {
             "description": "Bot Logs,Give a channel id with -100xxxxxxx",
+            "value": "-1001813347956",
             "required": true
         },
         "AUTH_USERS": {
@@ -54,6 +58,7 @@
         },
         "AUTH_CHANNEL": {
             "description": "ID of channel.Make sure bot is admin in this channel. Without subscribing this channel users cannot use bot.",
+            "value": "-1001685983030",
             "required": true
         },
         "DATABASE_URI": {
