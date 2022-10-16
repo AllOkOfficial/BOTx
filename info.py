@@ -57,15 +57,8 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'HombaleCinemas')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "📝 File Name : <code>[HombaleCinemas] {file_name}</code>\n🧲 File Size :<i>{file_size}</i>\n<b>Join [Here](https://t.me/HombaleCinemasChat)</b>
-                  reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton('♨️ 𝖠𝖽𝖽 𝖡𝗈𝗍 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ♨️', url ="https://t.me/{BOT_USERNAME}?startgroup=true&admin=manage_chat+change_info+post_messages+edit_messages+delete_messages+invite_users+restrict_members+pin_messages+promote_members+manage_video_chats+anonymous=false")
-                        ],                       
-                    ]
-            )")
-            await asyncio.sleep(300)
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "📝 File Name : <code>[HombaleCinemas] {file_name}</code>\n🧲 File Size :<i>{file_size}</i>\n<b>Join [Here](https://t.me/HombaleCinemasChat)</b>reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('♨️ 𝖠𝖽𝖽 𝖡𝗈𝗍 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ♨️', url ="https://t.me/{BOT_USERNAME}?startgroup=true&admin=manage_chat+change_info+post_messages+edit_messages+delete_messages+invite_users+restrict_members+pin_messages+promote_members+manage_video_chats+anonymous=false")])")
+await asyncio.sleep(300)
             await msg1.delete()
             await msg.delete()
             del msg1, msg
