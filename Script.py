@@ -258,5 +258,5 @@ Group Link - {link.invite_link}
     LOG_TEXT_P = """#NewUser
 ID - <code>{}</code>
 Name - {}
-𝖯𝖾𝗋𝗆𝖺𝗇𝖾𝗇𝗍 - <code>[Link](buttonurl://tg://user?id={}</code>
+𝖯𝖾𝗋𝗆𝖺𝗇𝖾𝗇𝗍 - <code>tg://user?id={}</code>
 """
