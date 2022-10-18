@@ -19,16 +19,16 @@ F = InlineKeyboardMarkup(
 async def carbon_func(_, message):
     if not message.reply_to_message:
         return await message.reply_text(
-            "ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴛᴇxᴛ ᴍᴇssᴀɢᴇ ᴛᴏ ᴍᴀᴋᴇ ᴄᴀʀʙᴏɴ."
+            "reply to a text message to make carbon."
         )
     if not message.reply_to_message.text:
         return await message.reply_text(
-            "ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴛᴇxᴛ ᴍᴇssᴀɢᴇ ᴛᴏ ᴍᴀᴋᴇ ᴄᴀʀʙᴏɴ."
+            "reply to a text message to make carbon."
         )
     user_id = message.from_user.id
-    m = await message.reply_text("ᴘʀᴏᴄᴇssɪɴɢ...")
+    m = await message.reply_text("processing...")
     carbon = await make_carbon(message.reply_to_message.text)
-    await m.edit("ᴜᴘʟᴏᴀᴅɪɴɢ..")
+    await m.edit("uploading..")
     await message.reply_photo(
         photo=carbon,
         caption=C,
