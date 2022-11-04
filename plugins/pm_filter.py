@@ -135,7 +135,7 @@ async def next_page(bot, query):
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer("Dᴏ ʏᴏᴜ'ʀᴇ ᴏᴡɴ ʀᴇᴏ̨ᴜᴇsᴛ, Tʜɪs ɪs ɴᴏᴛ ʏᴏᴜʀs!", show_alert=False)
+        return await query.answer("Dᴏ ʏᴏᴜ'ʀᴇ ᴏᴡɴ ʀᴇᴏ̨ᴜᴇsᴛ, Tʜɪs ɪs ɴᴏᴛ ʏᴏᴜʀs!", show_alert=True)
     if movie_ == "close_spellcheck":
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.message_id)
@@ -210,7 +210,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 except:
                     pass
             else:
-                await query.answer("That's not for you!!", show_alert=False)
+                await query.answer("That's not for you!!", show_alert=True)
     elif "groupcb" in query.data:
         await query.answer()
 
@@ -503,7 +503,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         InlineKeyboardButton('sᴇᴀʀᴄʜ ʜᴇʀᴇ', switch_inline_query_current_chat='') ],
      [
         InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu'),
-        InlineKeyboardButtons('ᴅonate ᴜs', callback_data='source')
+        InlineKeyboardButtons('ᴅonate ᴜs', callback_data='help')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.delete()
