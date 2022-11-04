@@ -25,10 +25,13 @@ async def start(client, message: pyrogram.types.Message):
 
     if message.chat.type in ['group', 'supergroup']:
         buttons = [[
-        InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true') ] ,
-      [
+        InlineKeyboardButton('♨️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ♨️', url=f'http://t.me/{temp.U_NAME}?startgroup=true') ] ,
+     [
+        InlineKeyboardButton('ʜᴏᴍʙᴀʟᴇ ᴜᴘᴅᴀᴛᴇs', url=f'http://t.me/HombaleCinemas'),
+        InlineKeyboardButton('sᴇᴀʀᴄʜ ʜᴇʀᴇ', switch_inline_query_current_chat='') ],
+     [
         InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu'),
-        InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
+        InlineKeyboardButtons('ᴅonate ᴜs', callback_data='source')
     ]]
        
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -71,10 +74,13 @@ async def start(client, message: pyrogram.types.Message):
     if len(message.command) != 2:
 
         buttons = [[
-        InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true') ] ,
-      [
+        InlineKeyboardButton('♨️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ♨️', url=f'http://t.me/{temp.U_NAME}?startgroup=true') ] ,
+     [
+        InlineKeyboardButton('ʜᴏᴍʙᴀʟᴇ ᴜᴘᴅᴀᴛᴇs', url=f'http://t.me/HombaleCinemas'),
+        InlineKeyboardButton('sᴇᴀʀᴄʜ ʜᴇʀᴇ', switch_inline_query_current_chat='') ],
+     [
         InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu'),
-        InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
+        InlineKeyboardButtons('ᴅonate ᴜs', callback_data='source')
     ]]
 
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -101,12 +107,12 @@ async def start(client, message: pyrogram.types.Message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤖 Join Updates Channel", url=invite_link.invite_link
+                    "🔒Updates Channel", url=invite_link.invite_link
                 )
             ]
         ]
 
-        if message.command[1] != "subscribe":
+        if message.command[1] != "subscribe🔓":
             kk, file_id = message.command[1].split("_", 1)
             pre = 'checksubp' if kk == 'filep' else 'checksub' 
             btn.append([InlineKeyboardButton(" 🔄 Try Again", callback_data=f"{pre}#{file_id}")])
@@ -121,10 +127,13 @@ async def start(client, message: pyrogram.types.Message):
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
 
         buttons = [[
-        InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true') ] ,
-      [
+        InlineKeyboardButton('♨️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ♨️', url=f'http://t.me/{temp.U_NAME}?startgroup=true') ] ,
+     [
+        InlineKeyboardButton('ʜᴏᴍʙᴀʟᴇ ᴜᴘᴅᴀᴛᴇs', url=f'http://t.me/HombaleCinemas'),
+        InlineKeyboardButton('sᴇᴀʀᴄʜ ʜᴇʀᴇ', switch_inline_query_current_chat='') ],
+     [
         InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu'),
-        InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
+        InlineKeyboardButtons('ᴅonate ᴜs', callback_data='source')
     ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -399,7 +408,7 @@ async def delete_all_index_confirm(bot, message):
 async def settings(client, message):
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"You are anonymous admin. Use /connect {message.chat.id} in PM")
+        return await message.reply(f"You are anonymous admin.\nUse <code>/connect {message.chat.id}</code> in PM")
     chat_type = message.chat.type
 
     if chat_type == "private":
@@ -523,7 +532,7 @@ async def save_template(client, message):
     sts = await message.reply("Checking template")
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"You are anonymous admin. Use /connect {message.chat.id} in PM")
+        return await message.reply(f"You are anonymous admin.\nUse <code>/connect {message.chat.id}</code> in PM")
     chat_type = message.chat.type
 
     if chat_type == "private":
