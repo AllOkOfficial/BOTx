@@ -30,8 +30,10 @@ class script(object):
 ⍟ 𝖲𝖾𝗋𝗏𝖾𝗋 : 𝖢𝗅𝗈𝗎𝖽 𝖫𝗂𝗇𝗈𝖽𝖾
 ⍟ 𝖣𝖺𝗍𝖺𝖻𝖺𝗌𝖾 : 𝖬𝗈𝗇𝗀𝗈𝖣𝖡
 """
-    SOURCE_TXT = """<b>NOTE:</b>
-- <b>𝖯𝗋𝗈𝗃𝖾𝖼𝗍 : 𝖡𝖾𝗍𝖺 𝖵𝖾𝗋𝗌𝗂𝗈𝗇 𝟣.𝟧</b> 
+    SOURCE_TXT = """<b>So you want to donate? Amazing!
+You can donate on PayPal, or you can set up a recurring donation on GitHub Sponsors.
+This project is entirely run by volunteers, and server fees aren't cheap, so we thank you for your support!</b>
+- <b>Contact us</b> 
 - <b>𝖢𝗋𝖾𝖺𝗍𝗈𝗋 : @R2SPR</b> 
 - <a href=https://t.me/HombaleCinemas>Team HombaleCinemas</a>
 """
