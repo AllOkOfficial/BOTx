@@ -426,7 +426,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             msg = await client.send_cached_media(
                 chat_id=AUTH_CHANNEL,
                 file_id=file_id,
-                caption=f'<b>Hai 👋 {query.from_user.mention}</b> 😍\n\n<code>[HombaleCinemas] {title}</code>\n\n⚠️ <i>This file will be deleted from here within 5 minute as it has copyright ... !!!</i>\n\n<i>So forward it to anywhere before downloading!</i>\n\n<i><b>⚡ Powered by {query.message.chat.title}</b></i>',
+                caption=f'<b>Hai 👋 {query.from_user.mention}</b> 😍\n\n<code>[@HombaleCinemas] {title}</code>\n\n<b><i>⚠️ Due to copyright file will be deleted from here within 5 minute .\nSo forward it to anywhere before downloading!\n\nकॉपीराइट के कारण फ़ाइल यहाँ से 5 मिनट में हटा दी जाएगी इसलिए यहाँ से कहीं और जाने के बाद डाउनलोड करें!\n\nಹಕ್ಕುಸ್ವಾಮ್ಯದ ಕಾರಣದಿಂದಾಗಿ ಫೈಲ್ ಅನ್ನು 5 ನಿಮಿಷಗಳಲ್ಲಿ ಇಲ್ಲಿಂದ ಅಳಿಸಲಾಗುತ್ತದೆ ಆದ್ದರಿಂದ ಇಲ್ಲಿಂದ ಬೇರೆಡೆಗೆ ಸ್ಥಳಾಂತರಗೊಂಡ ನಂತರ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ!</i></b>\n\n<i><b>⚡ Powered by {query.message.chat.title}</b></i>',
                 protect_content=True if ident == "filep" else False 
             )
             msg1 = await query.message.reply(
@@ -497,10 +497,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-        InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true') ] ,
+        InlineKeyboardButton('♨️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ♨️', url=f'http://t.me/{temp.U_NAME}?startgroup=true') ] ,
+     [
+        InlineKeyboardButton('ʜᴏᴍʙᴀʟᴇ ᴜᴘᴅᴀᴛᴇs', url=f'http://t.me/HombaleCinemas'),
+        InlineKeyboardButton('sᴇᴀʀᴄʜ ʜᴇʀᴇ', switch_inline_query_current_chat='') ],
      [
         InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu'),
-        InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
+        InlineKeyboardButtons('ᴅonate ᴜs', callback_data='source')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.delete()
