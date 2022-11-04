@@ -31,7 +31,7 @@ async def start(client, message: pyrogram.types.Message):
         InlineKeyboardButton('sᴇᴀʀᴄʜ ʜᴇʀᴇ', switch_inline_query_current_chat='') ],
      [
         InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu'),
-        InlineKeyboardButtons('ᴅonate ᴜs', callback_data='close')
+        InlineKeyboardButtons('ᴄᴏᴘʏʀɪɢʜᴛ', url=f'http://t.me/HombaleCinemas/46')
     ]]
        
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -80,7 +80,7 @@ async def start(client, message: pyrogram.types.Message):
         InlineKeyboardButton('sᴇᴀʀᴄʜ ʜᴇʀᴇ', switch_inline_query_current_chat='') ],
      [
         InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu'),
-        InlineKeyboardButtons('ᴅonate ᴜs', callback_data='close')
+        InlineKeyboardButtons('ᴄᴏᴘʏʀɪɢʜᴛ', url=f'http://t.me/HombaleCinemas/46')
     ]]
 
         reply_markup = InlineKeyboardMarkup(buttons)
