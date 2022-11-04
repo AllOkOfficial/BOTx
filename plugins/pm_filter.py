@@ -500,10 +500,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         InlineKeyboardButton('♨️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ♨️', url=f'http://t.me/{temp.U_NAME}?startgroup=true') ] ,
      [
         InlineKeyboardButton('ʜᴏᴍʙᴀʟᴇ ᴜᴘᴅᴀᴛᴇs', url=f'http://t.me/HombaleCinemas'),
-        InlineKeyboardButton('sᴇᴀʀᴄʜ ʜᴇʀᴇ', switch_inline_query_current_chat='') ],
+        InlineKeyboardButton('sᴇᴀʀᴄʜ ʜᴇʀᴇ', switch_inline_query_current_chat='') ] ,
      [
-        InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu'),
-        InlineKeyboardButtons('ᴄᴏᴘʏʀɪɢʜᴛ', url=f'http://t.me/HombaleCinemas/46')
+        InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.delete()
