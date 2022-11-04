@@ -70,7 +70,7 @@ PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 
 DELETE_TIME = int(environ.get('DELETE_TIME', 300))
 START_IMAGE_URL = environ.get('START_IMAGE_URL', "")
-UNAUTHORIZED_CALLBACK_TEXT = (environ.get('UNAUTHORIZED_CALLBACK_TEXT', "Ask me again!"))[:200]
+UNAUTHORIZED_CALLBACK_TEXT = (environ.get('UNAUTHORIZED_CALLBACK_TEXT', "Dᴏ ʏᴏᴜ'ʀᴇ ᴏᴡɴ ʀᴇᴏ̨ᴜᴇsᴛ, Tʜɪs ɪs ɴᴏᴛ ʏᴏᴜʀs!"))[:200]
 REDIRECT_TO = (environ.get('REDIRECT_TO', 'true'))
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
