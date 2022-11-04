@@ -35,7 +35,13 @@ class script(object):
 You can donate on PayPal, or you can set up a recurring donation on GitHub Sponsors.
 This project is entirely run by volunteers, and server fees aren't cheap, so we thank you for your support!</b>
 - <b>Contact us</b> 
-- <b>𝖢𝗋𝖾𝖺𝗍𝗈𝗋 : @R2SPR</b> 
+- <b>𝖢𝗋𝖾𝖺𝗍𝗈𝗋 : @R2SPR</b>
+
+YOU CAN ALSO DENOTE FILES
+1. Make me the admin of your channel if it's private.
+2. make sure that your channel does not contains cam rip, porn and fake files.
+3. Forward the last message to me with quotes.
+4. I'll add all the files in that channel to my db.
 - <a href=https://t.me/HombaleCinemas>Team HombaleCinemas</a>
 """
     TTS_TXT = """<b>TEXT TO SPEACH</b>
