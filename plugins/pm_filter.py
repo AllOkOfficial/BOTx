@@ -503,7 +503,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         InlineKeyboardButton('sᴇᴀʀᴄʜ ʜᴇʀᴇ', switch_inline_query_current_chat='') ],
      [
         InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu'),
-        InlineKeyboardButtons('ᴅonate ᴜs', callback_data='help')
+        InlineKeyboardButtons('ᴄᴏᴘʏʀɪɢʜᴛ', url=f'http://t.me/HombaleCinemas/46')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.delete()
